@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website - Luis Arias 4</title>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="#top" title="Home">HOME</a>
+                <a href="index.html" title="About us">ABOUT</a>
+                <a href="#portfolio" title="my portfolio">PORTFOLIO</a>
+                <a href="contact.html" title="Contact us">CONTACT</a>
+            </div>
+            <img id="nav" src="assets/LuisLogo6.png" alt="it's a logo">
+        </nav>
+        <header >
+            <div id="idHeader">
+                <img id="headerImg" src="assets/img5.jpg" alt="it's a pic">
+                <h1>Luis Andres Arias</h1>
+            </div>
+        </header>
+        <main>
+            <div id="mainDiv">
+                <h3 id="portfolio">My portfolio</h3> 
+                <div id="screen">
+                    <div class="tabMenu">
+                        <button class="tabLinks" onclick="OpenTabMenu(event, 'Photoshop')">Photoshop</button>
+                        <button class="tabLinks" onclick="OpenTabMenu(event, 'Illustrator')">Illustrator</button>
+                        <button class="tabLinks" onclick="OpenTabMenu(event, 'Java')">Java</button>
+                        <button class="tabLinks" onclick="OpenTabMenu(event, 'Charcoa_Drawings')">Charcoal Drawings</button>
+                        <button class="tabLinks" onclick="OpenTabMenu(event, 'Wallpapers')">Wallpapers</button>
+                    </div>
+                    <h1 id="text"></h1> 
+                    <div class="boxContent">
+                        <button id="back"> < </button>
+                        <button id="forward"> > </button>
+                        <img id="Photoshop" class="tabContent active" src="assets/LuisImage1.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>    
+        </main>
+        <footer background = "#000">
+            &copy; 2021 - programming is fun!. &heartsuit;
+        </footer>
+        <script src="js/tabbedMenu.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
